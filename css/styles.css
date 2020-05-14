@@ -78,6 +78,8 @@ input,
 select,
 textarea {
     font-family: 'Roboto';
+    border-radius: 0px !important;
+    padding: 15px;
 }
 
 p {
@@ -228,7 +230,7 @@ textarea, select, input, button:focus {
 }
 
 #home{
-    background-image: url(/images/medical/3485318.jpg);
+    background-image: url(../images/medical/3485318.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -242,16 +244,22 @@ textarea, select, input, button:focus {
 
 .main-cards{
     font-size : 14px;
-    letter-spacing: 0.6
+    letter-spacing: 0.6px;
 }
 
 /*about*/
 .font60{
     font-size: 60px;
 }
- @media(min-width:768px and max-width:1199px){
+@media (min-device-width:768px) and (max-device-width: 11199px)
+
+ {
      .font60{
         font-size:40px;
+     }
+     .p-text{
+         font-size:15px;
+         line-height: 20px;
      }
     }
     @media (max-width:767px){
@@ -266,12 +274,9 @@ textarea, select, input, button:focus {
     line-height: 26px;  
 }
 
-@media(min-width:768px and max-width:1199px){
-     .p-text{
-        font-size:15px;
-         line-height: 20px;  
-     }
-    }
+/*@media(min-width:768px and max-width:1199px){*/
+/*     */
+/*    }*/
     @media (max-width:767px){
         .p-text{
         font-size:15px;
@@ -308,19 +313,14 @@ opacity: 1;
 .font48{
     font-size: 48px;
     color: #2E3242;
-     @media(min-width:768px and max-width:1199px){
-        font-size:
-    }
-    @media (max-width:767px){
-        font-size:
-    }
+
 }
 .skillTypeFont{
     font-size: 12px;
     color: #2E3242;
 }
 .standing-doctor{
-    background-image: url("/images/medical/974.jpg");
+    background-image: url("../images/medical/974.jpg");
     background-size: cover;
     background-position:center; 
 /*    padding: 0;*/
@@ -347,12 +347,6 @@ opacity: 1;
 
 .font65{
     font-size: 45px;
-    @media(min-width:768px and max-width:1199px){
-        font-size:
-    }
-    @media (max-width:767px){
-        font-size:
-    }
 }
 .font30{
     font-size: 17px;
@@ -453,20 +447,20 @@ opacity: 1;
 /*contact*/
 
 .women-doctor{
-background-image: url('/images/medical/photo-of-woman-holding-red-stethoscope-3408368.jpg');
+background-image: url('../images/medical/photo-of-woman-holding-red-stethoscope-3408368.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .contact-form{
-    background-image: url('/images/medical/bg-img1.png');
+    background-image: url('../images/medical/bg-img1.png');
     background-size: cover;
 }
 
 .AppointmentForm{
    background: #FFFFFF 0% 0% no-repeat padding-box;
-box-shadow: 0px 3px 6px #00000029;
-border-radius: 10px;
+box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.1607843137254902);
+border-radius: 0px;
 opacity: 1;
     margin-left: 20%;
     margin-right: 20%;
@@ -501,7 +495,7 @@ div.gallery:hover {
     float: left;
     width: 25.99999%;
     background-color:  #008CBA;
-    ba
+
   }
   
   @media only screen and (max-width: 700px) {
@@ -573,4 +567,110 @@ footer{
 .social-media-icon:hover{
     background-color:  #3264F5;
     color:#00BCD4 ;
+}
+
+button{
+    padding:10px 20px !important;
+    background: #00BCD4;
+    border: 0px;
+    color: #fff !important;
+}
+
+/*loader*/
+
+.loader,
+.loader:after {
+    border-radius: 50%;
+    width: 10em;
+    height: 10em;
+}
+.loader {
+    color: #3264f5;
+    font-size: 90px;
+    text-indent: -9999em;
+    overflow: hidden;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    margin: 20% auto;
+    position: relative;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+    animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+}
+@-webkit-keyframes load6 {
+    0% {
+        box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    5%,
+    95% {
+        box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    10%,
+    59% {
+        box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+    }
+    20% {
+        box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+    }
+    38% {
+        box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+    }
+    100% {
+        box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+}
+@keyframes load6 {
+    0% {
+        box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    5%,
+    95% {
+        box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    10%,
+    59% {
+        box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+    }
+    20% {
+        box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+    }
+    38% {
+        box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+    }
+    100% {
+        box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+}
+@-webkit-keyframes round {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes round {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+#loadingDiv {
+    position:absolute;;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:#fff;
+    z-index: 999999;
+    overflow: hidden;
 }

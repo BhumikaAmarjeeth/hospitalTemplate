@@ -27,11 +27,11 @@
 <!-- Animator CSS -->
     <link  rel="stylesheet"  href="./css/animate.css"    />
     <link rel="stylesheet" href="./css/styles.css">
-    
+
     </head>
 
     <body>
-    
+
         <header class="header">
     <nav class="navbar navbar-expand-lg fixed-top py-3">
         <div class="container"><a href="#" class="navbar-brand text-uppercase font-weight-bold"><img src="./images/logo.png" class="logo" alt="fulgid"></a>
@@ -119,8 +119,7 @@
             <div class="row">
             
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 col-12">
-                
-                <h4 class="darkText">Medical health at its best</h4>
+               <h4 class="darkText">Medical health at its best</h4>
                 <h2 class="font60 darkText">We Value Your <span class="greenishBlue">Family More</span> Than Anyone Else.</h2>
                 
                 </div>
@@ -248,8 +247,8 @@
         <section class="contact mt-5" id="contact">
             
             <div class="row">
-            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-xs-12 col-12 women-doctor"></div>
-            <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-xs-12 col-12 container contact-form">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 col-12 women-doctor"></div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 col-12 container contact-form">
             
                 <div class="AppointmentForm my-5">
                 <form class="form-horizontal px-3 px-lg-5  px-sm-3 px-md-3 py-4"  role="form" id="contactForm">
@@ -449,7 +448,7 @@
         <footer>
         
         <div class="row text-center py-4">
-            <div class="col-12">© 2020 Hex Lab. Made With Love By Fulgid</div>
+            <div class="col-12"><p>© 2020 Hex Lab. Made With Love By Fulgid.</p></div>
             <div class="col-12 mt-3">
                             <div class="icon-so social-media">
                     <ul class="icon-effect icon-effect-1a list-inline d-flex justify-content-center">
@@ -478,10 +477,26 @@
 <script type="text/javascript" src="./js/validator.min.js"></script>
 <script type="text/javascript" src="./js/form-scripts.js"></script>
 <script src="./js/script.js"></script>
+
 <script>
     AOS.init();
+
 </script>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        $('body').append('<div style="" id="loadingDiv"><div class="loader">Loading...</div></div>');
+        $(window).on('load', function(){
+            setTimeout(removeLoader, 2000); //wait for page load PLUS two seconds.
+        });
+        function removeLoader(){
+            $( "#loadingDiv" ).fadeOut(500, function() {
+                // fadeOut complete. Remove the loading div
+                $( "#loadingDiv" ).remove(); //makes page more lightweight
+            });
+        }
+    </script>
+
     </body>
-    
+
 </html>
