@@ -41,12 +41,17 @@ color: #3264F5;
 .ligtBlue{
     color: #4997E4;
 }
-
+.light-grey{
+    color: #87878B;
+}
 .text-white{
     color: #ffffff;
 }
 .darkText{
  color: #2E3242;
+}
+.light-text{
+    color: #F6F6F6;
 }
 
 .bg-greenishBlue{
@@ -72,7 +77,7 @@ background-color: #3264F5;
     letter-spacing: 0.8px;
 }
 
-html,
+
 button,
 input,
 select,
@@ -171,7 +176,7 @@ textarea, select, input, button:focus {
 
 .navbar.active .nav-link:hover,
 .navbar.active .nav-link:focus {
-    color: #555;
+    color:#fff;
     text-decoration: none;
 }
 
@@ -362,6 +367,11 @@ opacity: 1;
 		    box-shadow: 0 19px 38px rgba(0,0,0,0.10), 0 15px 12px rgba(0,0,0,0.02);
 		}
 
+.tiny-text{
+   font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.67px;
+}
 		.testimonial-name {
 		    margin: -17px auto 0;
 		    display: table;
@@ -394,6 +404,7 @@ opacity: 1;
 		    max-width: 90px;
     		margin: 0 auto 17px;
             border-radius: 100%;
+           border: 1px solid #707070;
 		}
 		#customers-testimonials.owl-carousel .owl-dots .owl-dot.active span,
 #customers-testimonials.owl-carousel .owl-dots .owl-dot:hover span {
@@ -527,7 +538,9 @@ div.gallery:hover {
 
 /*Blog*/
 
-
+.blog{
+    background-color: #F6F6F6;
+}
 
 .blogWrap{
      background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -674,3 +687,11 @@ button{
     z-index: 999999;
     overflow: hidden;
 }
+
+/*=============Map============
+=============================
+=============================*/
+.address{
+ background-color: #ffffff;
+    box-shadow: 0px 3px 6px #00000029;
+    border-left: 50px solid #3264F5;
