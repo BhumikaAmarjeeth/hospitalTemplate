@@ -1,19 +1,21 @@
 <!doctype html>
 <html>
 
-    <head>
-    
-        <!-- Required meta tags -->
+<head>
+
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-        <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hospital Website</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!--owl-carousel-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!--font-awesome-->
@@ -24,17 +26,44 @@
 
     <!--Roboto Font-->
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-<!-- Animator CSS -->
-    <link  rel="stylesheet"  href="./css/animate.css"    />
+    <!-- Animator CSS -->
+    <link rel="stylesheet" href="./css/animate.css"/>
     <link rel="stylesheet" href="./css/styles.css">
+    <style>
+        #stringPreloader {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 100px;
+        }
 
-    </head>
+        #stringPreloader path {
+            fill: none;
+            stroke: #00BCD4;
+            stroke-width: 2;
+            transform: translateX(-10px);
+            animation: shift 1s linear infinite;
+        }
 
-    <body>
+        @keyframes shift {
+            to {
+                transform: translateX(-50px);
+            }
+        }
 
-        <header class="header">
+
+    </style>
+</head>
+
+<body>
+
+<header class="header">
     <nav class="navbar navbar-expand-lg fixed-top py-3">
-        <div class="container"><a href="#" class="navbar-brand text-uppercase font-weight-bold"><img src="./images/logo.png" class="logo" alt="fulgid"></a>
+        <div class="container"><a href="#" class="navbar-brand text-uppercase font-weight-bold"><img
+                src="./images/logo.png" class="logo" alt="fulgid"></a>
             <button type="button" data-toggle="collapse" data-target="#menu-content" aria-expanded="false"
                     aria-controls="navbar" class="collapsed navbar-toggle hamburgurMenu" onclick="myFunction(this)">
                 <span class="sr-only">Toggle navigation</span>
@@ -49,448 +78,845 @@
                     <li class="nav-item active"><a href="#home" class="nav-link text-uppercase">Home <span
                             class="sr-only">(current)</span></a></li>
                     <li class="nav-item"><a href="#about" class="nav-link text-uppercase">About Us</a></li>
-                    <li class="nav-item"><a href="#services" class="nav-link text-uppercase ">Services</a></li>
+                    <li class="nav-item"><a href="#service" class="nav-link text-uppercase ">Services</a></li>
                     <li class="nav-item"><a href="#blog" class="nav-link text-uppercase">Blog</a></li>
                     <li class="nav-item"><a href="#contact" class="nav-link text-uppercase">Contact Us</a></li>
+                    <li class="nav-item"><a href="#appointment" class="nav-link apt-btn btn btn-primary text-uppercase">Appointment</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 </header>
-        
-        <header id="home">
-            
-            <div class="container">
-            <!-- <div class=" "> -->
-                <div class="centerAlign">
-                <h5 class="darkText">We care for your</h5>
-                <h1 class="greenishBlue  font-weight-bold ">Medical <span class="darkBlue">Health</span></h1>
-                <p class="font20 w-50 darkText">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-                <p class="darkText">Learn More</p>
+
+<header id="home">
+
+    <div class="container mt--10">
+        <!-- <div class=" "> -->
+        <div class="centerAlign">
+            <h5 class="darkText pb-20">We care for your</h5>
+            <h1 class="greenishBlue heading  font-weight-bold  pb-20">Medical <span class="darkBlue">Health</span></h1>
+            <p class="font20 w-50 pb-30 darkText">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
+                velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec
+                sagittis sem nibh id elit.</p>
+            <button class="button button--wayra button--border-thick button--text-upper button--size-s">Let's Start
+            </button>
             <!-- </div> -->
+        </div>
+    </div>
+
+</header>
+
+<!--Service card-->
+<section  data-aos="zoom-in-up" class="hero-cards ">
+
+    <div class="container">
+        <div class="col-lg-12">
+            <div class="row text-center">
+                <div class="col-xl-4 service-box col-lg-4 col-md-4 col-sm-12 ">
+                    <div class="bg-greenishBlue shadow-3 p-4 mt-4 m-15 ">
+                       <span class="service-icon">
+                           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 409.05 409.05"
+                                style="enable-background:new 0 0 409.05 409.05;" xml:space="preserve" width="60px"
+                                height="60px" class="">
+    <g>
+        <path d="M354.098,352.716c-4.931,2.49-10.945,0.508-13.433-4.423l-49.78-98.657c-11.89-23.561-29.189-47.646-67.352-47.646h-38.018  c-38.16,0-55.462,24.086-67.354,47.647l-49.777,98.656c-1.759,3.485-5.281,5.497-8.936,5.497c-1.515,0-3.052-0.345-4.497-1.074  c-4.931-2.487-6.911-8.502-4.423-13.433l49.778-98.657c12.705-25.173,35.36-58.637,85.209-58.637h38.015  c49.854,0,72.507,33.465,85.21,58.637l49.78,98.657C361.009,344.214,359.029,350.228,354.098,352.716z M223.569,222.208  c-5.522,0-10,4.478-10,10v12.878h-12.879c-5.523,0-10,4.478-10,10s4.477,10,10,10h12.879v12.879c0,5.522,4.478,10,10,10  s10-4.478,10-10v-12.879h12.877c5.522,0,10-4.478,10-10s-4.478-10-10-10h-12.877v-12.878  C233.569,226.686,229.091,222.208,223.569,222.208z M275.02,277.679c-5.522,0-10,4.478-10,10V389.05H144.027V287.679  c0-5.522-4.477-10-10-10s-10,4.478-10,10V399.05c0,5.522,4.477,10,10,10H275.02c5.522,0,10-4.478,10-10V287.679  C285.02,282.156,280.542,277.679,275.02,277.679z M107.584,120.974c-1.579-7.09-2.38-14.376-2.38-21.656  C105.204,44.554,149.759,0,204.525,0c54.764,0,99.316,44.554,99.316,99.317c0,7.284-0.799,14.569-2.375,21.654  c-1.019,4.574-5.075,7.828-9.762,7.828h-37.839c-10.29,17.191-29.007,27.988-49.341,27.988s-39.052-10.797-49.343-27.988h-37.837  C112.66,128.8,108.603,125.547,107.584,120.974z M235.24,120.789c-26.111-5.144-45.928-28.028-46.333-55.531  c-12.887,5.933-21.854,18.969-21.854,34.06c0,5.361,1.106,10.533,3.288,15.373c0.025,0.055,0.049,0.109,0.073,0.165  c6.084,13.329,19.454,21.933,34.111,21.933C216.872,136.788,228.305,130.683,235.24,120.789z M241.995,99.317  c0-19.157-14.452-35.003-33.025-37.209c-0.046,0.763-0.069,1.526-0.069,2.292c0,19.158,14.452,35.005,33.026,37.209  C241.973,100.85,241.995,100.085,241.995,99.317z M125.204,99.317c0,3.169,0.189,6.338,0.566,9.482h22.057  c-0.516-3.109-0.775-6.275-0.775-9.482c0-30.038,23.163-54.767,52.566-57.264c0.058-0.005,0.115-0.01,0.173-0.014  c1.562-0.128,3.14-0.193,4.733-0.193c31.689,0,57.471,25.781,57.471,57.471c0,3.207-0.259,6.372-0.775,9.482h22.057  c0.375-3.143,0.564-6.313,0.564-9.482C283.841,55.582,248.26,20,204.525,20C160.787,20,125.204,55.582,125.204,99.317z"
+              data-original="#000000" class="active-path" data-old_color="#000000" fill="#333333"/>
+    </g>
+</svg>
+</span>
+                        <h4 class="text-white my-3">Medical Counselling</h4>
+                        <p class=" text-white ">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh
+                            vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor.Aenean
+                            sollicitudin</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 service-box col-lg-4 col-md-4 col-sm-12 ">
+                    <div class="m-15 bg-darkBlue shadow-3  p-4 mt-4">
+                        <span class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 version="1.1" id="Capa_1" x="0px"
+                                 y="0px" viewBox="0 0 409.383 409.383"
+                                 style="enable-background:new 0 0 409.383 409.383;" xml:space="preserve"
+                                 width="60px" height="60px" class="hovered-paths">
+    <g>
+        <path d="M228.348,53.661c0,5.522-4.477,10-10,10h-3.656v3.656c0,5.522-4.477,10-10,10s-10-4.478-10-10v-3.656h-3.656  c-5.523,0-10-4.478-10-10s4.477-10,10-10h3.656v-3.655c0-5.522,4.477-10,10-10s10,4.478,10,10v3.655h3.656  C223.871,43.661,228.348,48.139,228.348,53.661z M147.221,99.651c0-0.394,0.023-0.783,0.067-1.165  c-0.044-0.382-0.067-0.771-0.067-1.165V10c0-5.522,4.477-10,10-10h94.94c5.523,0,10,4.478,10,10v87.321  c0,0.395-0.023,0.783-0.067,1.165c0.044,0.382,0.067,0.771,0.067,1.165c0,31.689-25.781,57.471-57.47,57.471  S147.221,131.341,147.221,99.651z M241.373,107.321H168.01c3.549,16.995,18.648,29.801,36.681,29.801  S237.823,124.316,241.373,107.321z M167.221,87.321h74.94V20h-74.94V87.321z M275.187,278.013c-5.523,0-10,4.478-10,10v101.37  H144.196v-101.37c0-5.522-4.477-10-10-10s-10,4.478-10,10v111.37c0,5.522,4.477,10,10,10h140.991c5.523,0,10-4.478,10-10v-111.37  C285.187,282.49,280.71,278.013,275.187,278.013z M354.265,353.05c-1.444,0.729-2.982,1.074-4.497,1.074  c-3.655,0-7.177-2.011-8.936-5.497l-49.778-98.658c-10.14-20.09-24.213-40.563-51.8-46.156v76.237  c9.143,3.9,15.568,12.98,15.568,23.532c0,14.098-11.47,25.567-25.568,25.567s-25.568-11.47-25.568-25.567  c0-10.552,6.425-19.632,15.568-23.532v-77.727h-32.347v16.446c9.142,3.409,15.566,11.343,15.566,20.563v18.792  c0,5.522-4.477,10-10,10s-10-4.478-10-10v-18.792c-0.139-0.538-2.085-2.345-5.568-2.345c-3.481,0-5.427,1.807-5.57,2.38  l0.004,18.757c0,5.522-4.477,10-10,10s-10-4.478-10-10v-18.792c0-9.222,6.425-17.157,15.568-20.565v-14.22  c-25.476,6.484-38.841,26.129-48.579,45.422l-49.777,98.657c-2.488,4.931-8.502,6.912-13.433,4.423  c-4.931-2.487-6.911-8.502-4.423-13.433l49.778-98.658c12.705-25.172,35.36-58.636,85.209-58.636h38.019  c49.849,0,72.504,33.464,85.208,58.635l49.778,98.659C361.175,344.548,359.195,350.563,354.265,353.05z M234.822,303.582  c0-3.022-2.42-5.49-5.423-5.567c-0.096,0.002-0.193,0.002-0.289,0c-3.003,0.077-5.423,2.545-5.423,5.567  c0,3.069,2.498,5.567,5.568,5.567S234.822,306.651,234.822,303.582z"
+              data-original="#000000" class="hovered-path active-path" data-old_color="#000000" fill="#333333"/>
+    </g>
+</svg>
+                        </span>
+                        <h4 class="text-white my-3">Qualified Doctors</h4>
+                        <p class="text-white">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
+                            velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor.Aenean
+                            sollicitudin</p>
+                    </div>
+                </div>
+                <div class="col-xl-4  service-box col-lg-4 col-md-4 col-sm-12 ">
+                    <div class="main-cards shadow-3  m-15 p-4 bg-white mt-4">
+                        <span class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 406.833 406.833"
+                                 style="enable-background:new 0 0 406.833 406.833;" xml:space="preserve" width="60px"
+                                 height="60px" class="">
+    <g>
+        <path d="M249.39,169.804h-39.451v-39.449c0-5.523-4.478-10-10-10h-47.221c-5.522,0-10,4.477-10,10v39.449h-39.451  c-5.522,0-10,4.477-10,10v47.224c0,5.523,4.478,10,10,10h39.451v39.45c0,5.523,4.478,10,10,10h47.221c5.522,0,10-4.477,10-10v-39.45  h39.451c5.522,0,10-4.477,10-10v-47.224C259.39,174.281,254.913,169.804,249.39,169.804z M239.39,217.028h-39.451  c-5.522,0-10,4.477-10,10v39.45h-27.221v-39.45c0-5.523-4.478-10-10-10h-39.451v-27.224h39.451c5.522,0,10-4.477,10-10v-39.449  h27.221v39.449c0,5.523,4.478,10,10,10h39.451V217.028z M385.57,140.499c0.001-0.065,0.002-0.131,0.002-0.196  s-0.001-0.131-0.002-0.196V10c0-5.523-4.478-10-10-10s-10,4.477-10,10v120.303h-34.174V85.64c0-20.563-16.729-37.292-37.291-37.292  H58.554c-20.563,0-37.293,16.729-37.293,37.292v235.552c0,20.563,16.729,37.292,37.293,37.292h235.551  c20.563,0,37.291-16.729,37.291-37.292v-44.664h34.174v120.305c0,5.523,4.478,10,10,10s10-4.477,10-10V266.725  c0.001-0.065,0.002-0.131,0.002-0.196s-0.001-0.131-0.002-0.196V140.499z M311.396,321.192c0,9.535-7.757,17.292-17.291,17.292  H58.554c-9.535,0-17.293-7.757-17.293-17.292V85.64c0-9.535,7.758-17.292,17.293-17.292h235.551c9.534,0,17.291,7.757,17.291,17.292  V321.192z M365.57,256.528h-34.174V150.303h34.174V256.528z"
+              data-original="#000000" class="active-path" data-old_color="#000000" fill="#333333"/>
+    </g>
+</svg>
+                        </span>
+                        <h4 class="my-3">Emergency Care</h4>
+                        <p class="">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit
+                            auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor.Aenean
+                            sollicitudin</p>
+                    </div>
+                </div>
             </div>
+        </div>
+    </div>
+</section>
+<!--About-->
+<section class="about mb-100 mt-60" id="about">
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 col-12" data-aos="fade-right">
+                <h4 class=" pb-30 ls-1">Medical health at its best</h4>
+                <h2 class="font60 darkText">We Value Your <span class="greenishBlue">Family More</span> Than Anyone
+                    Else.</h2>
             </div>
 
-        </header>
-        
-        
-        <section class="hero-cards">
-        
-            <div class="container">
-            
-                <div class="row  justify-content-center text-center">
-                
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 col-27 m-15 bg-greenishBlue p-4 mt-4">
-                    
-                    <span><i class=" fa-icon fa fa-stethoscope" aria-hidden="true"></i></span>
-                    <h6 class="text-white my-3">Medical Counselling</h6>
-                    
-                    <p class="font20 text-white ">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor.Aenean sollicitudin</p>
-                    
-                    </div>
-                    
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 col-27 m-15 bg-darkBlue p-4 mt-4">
-                    
-                    <span><i class="fa fa-briefcase fa-icon" aria-hidden="true"></i></span>
-                    <h6 class="text-white my-3">Qualified Doctors</h6>
-                    <p class="font20 text-white">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor.Aenean sollicitudin</p>
-                    
-                    
-                    </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 main-cards col-27 m-15 p-4 bg-white mt-4">
-                    
-                    <span><i class="fa fa-telegram fa-icon" aria-hidden="true"></i></span>
-                    <h6 class="my-3">Medical Counselling</h6>
-                    <p class="font20">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor.Aenean sollicitudin</p>
-            
-                    
-                    </div>
-                    
-                </div>
-            
-            </div>
-        
-        </section>
-        
-        
-        <section class="about mt-4" id="about">
-            <div class="container">
-        
-            <div class="row">
-            
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 col-12">
-               <h4 class="darkText">Medical health at its best</h4>
-                <h2 class="font60 darkText">We Value Your <span class="greenishBlue">Family More</span> Than Anyone Else.</h2>
-                
-                </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 col-12">
-                
-                <p class="p-text darkText">We combine classic brand strategy and account planning to find a brand’s true capability. Then we turn this capability into exceptional content, products, services and campaigns.</p>
-                <div>
-                
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 col-12" data-aos="fade-left">
+
+                <p class="p-text darkText pb-50">We combine classic brand strategy and account planning to find a
+                    brand’s true capability. Then we turn this capability into exceptional content, products, services
+                    and campaigns.</p>
+                <div class="pb-30">
                     <img src="images/medical/1.png" class="mx-2" width="90">
                     <img src="images/medical/2.png" class="mx-2" width="90">
                     <img src="images/medical/3.png" class="mx-2" width="90">
-                
                 </div>
-                
-                <button class="bg-greenishBlue btn text-white appointment mt-4">Make Appointment Now</button>
-                
+                <div class="mb-20 mt-20">
+                    <button class="button button--wayra btn-up button--border-thick button--text-upper button--size-s">
+                        Make Appointment Now &nbsp;<i class="fa fa-long-arrow-right"></i></button>
+
                 </div>
-                
             </div>
-            </div>
-            
-        </section>
-        
-        <section class="skills mt-5">
-        
-            <div class="row">
-            
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 col-12 standing-doctor">
-                
-<!--               <img src="images/medical/974.jpg" width="100%" height="auto">-->
-                
-                </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 col-12 px-5 skill-level">
-                
-                <div class="container my-5 mr-5 px-5">
-                    
-                    <h4>Check Our Skills</h4>
-                    <h2 class="font48">What We <span class="greenishBlue">Offer</span> for You to our <span class="darkBlue">Patients</span></h2>
-                    
-                    <div class="progress-wrap">
-                     <div class="skillTypeFont mt-4">Tests for Professional Drivers <span class="float-right mr-0">78%</span></div>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 78%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    </div>
-                    
-                    <div class="progress-wrap">
-                     <div class="skillTypeFont mt-4">Treatment of Infectious Diseases<span class="float-right mr-0">68%</span></div>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 68%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    </div>
-                    
-                    <div class="progress-wrap">
-                     <div class="skillTypeFont mt-4">Blood Test<span class="float-right mr-0">92%</span></div>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 92%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    </div>
-                    
-                    <div class="progress-wrap">
-                     <div class="skillTypeFont mt-4">Tests for Professional Drivers <span class="float-right mr-0">89%</span></div>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 89%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    </div>
-                
-                
-                </div>
-                
-                
-                </div>
-                
-            </div>
-        
-        </section>
-        
-        <section class="service mt-5 pt-3" id="service">
-        
-        
-            <h4 class="text-center darkText">Fusce vitae elit fringilla, lacinia diam.</h4>
-            <h2 class="text-center mt-3 font65 darkText">Service <span class="darkBlue">Departments</span></h2>
-            
-             <div class="container">
-        <div class="row justify-content-center text-center">
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 onHover pb-10 pt-10 col-27 mt-4 bg-darkBlue m-15 p-4">
-                 <span><i class="fa fa-stethoscope fa-icon" aria-hidden="true"></i></span>
-                <h6 class="darkText mt-3">Examination of Body</h6>
-                    <p class="text-white font30">Phasellus eu scelerisque ligula. Pellentesque sollicitudin quis orci laoreet vehicula.</p>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 onHover pb-10 pt-10 col-27 mt-4 bg-greenishBlue m-15 p-4">
-                <span><i class="fa fa-briefcase fa-icon" aria-hidden="true"></i></span>
-                <h6 class="darkText mt-3">Surgery</h6>
-                    <p class="text-white font30">Phasellus eu scelerisque ligula. Pellentesque sollicitudin quis orci laoreet vehicula.</p>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 onHover pb-10 pt-10  col-27 mt-4 bg-darkBlue m-15 p-4">
-                <span><i class="fa fa-syringe fa-icon"></i></span>
-                <h6 class="darkText mt-3">Internal Medicine</h6>
-                    <p class="text-white font30">Phasellus eu scelerisque ligula. Pellentesque sollicitudin quis orci laoreet vehicula.</p>
-            </div>
+
         </div>
-        <div class="row justify-content-center text-center">
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 onHover pb-10 pt-10 col-27 mt-4 bg-greenishBlue m-15 p-4">
-                 <span><i class="fa fa-tint fa-icon "></i></span>
-                <h6 class="darkText mt-3">Blood Test</h6>
-                    <p class="text-white font30">Phasellus eu scelerisque ligula. Pellentesque sollicitudin quis orci laoreet vehicula.</p>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 onHover pb-10 pt-10 col-27 mt-4 bg-darkBlue m-15 p-4">
-                <span><i class="fa fa-microscope fa-icon"></i></span>
-                <h6 class="darkText mt-3">Dermatology</h6>
-                    <p class="text-white font30">Phasellus eu scelerisque ligula. Pellentesque sollicitudin quis orci laoreet vehicula.</p>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 onHover pb-10 pt-10 col-27 mt-4 bg-greenishBlue m-15 p-4">
-                 <span><i class="fa fa-heart fa-icon" aria-hidden="true"></i></span>
-                <h6 class="darkText mt-3">Cardio</h6>
-                    <p class="text-white font30">Phasellus eu scelerisque ligula. Pellentesque sollicitudin quis orci laoreet vehicula.</p>
-            </div>
-        </div>
-         
     </div>
-            
-        </section>
-        
-        
-        <section class="contact mt-5" id="contact">
-            
-            <div class="row">
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 col-12 women-doctor"></div>
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 col-12 container contact-form">
-            
-                <div class="AppointmentForm my-5">
-                <form class="form-horizontal px-3 px-lg-5  px-sm-3 px-md-3 py-4"  role="form" id="contactForm">
-                        <h4 class="text-center my-3">Get an Appointment</h4>
+
+</section>
+<!--Skills-->
+<section class="skills  mb-100 mt-80" data-aos="fade-up" id="skill">
+
+    <div class="row">
+
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 col-12 standing-doctor">
+
+            <!--               <img src="images/medical/974.jpg" width="100%" height="auto">-->
+
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 col-12 px-5 skill-level">
+
+            <div class="container pb-50 pt-50 my-5 mr-5 px-5">
+
+                <h4 class="mb-20">Check Our Skills</h4>
+                <h2 class="font48 mb-100">What We <span class="greenishBlue">Offer</span> for You to our <span
+                        class="darkBlue">Patients</span></h2>
+
+                <div class="progress-wrap progress-element">
+                    <div class="skillTypeFont mt-4">Tests for Professional Drivers <span
+                            class="float-right mr-0">78%</span></div>
+                    <div class="progress">
+                        <div class="progress-bar test" role="progressbar" aria-valuenow="78" aria-valuemin="0"
+                             aria-valuemax="100">78
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="progress-wrap">
+                    <div class="skillTypeFont mt-4">Treatment of Infectious Diseases<span
+                            class="float-right mr-0">68%</span></div>
+                    <div class="progress">
+                        <div class="progress-bar treatment" role="progressbar" aria-valuenow="68" aria-valuemin="0"
+                             aria-valuemax="100">68
+                        </div>
+                    </div>
+                </div>
+
+                <div class="progress-wrap">
+                    <div class="skillTypeFont mt-4">Blood Test<span class="float-right mr-0">92%</span></div>
+                    <div class="progress">
+                        <div class="progress-bar blood" role="progressbar" aria-valuenow="92" aria-valuemin="0"
+                             aria-valuemax="100">92
+                        </div>
+                    </div>
+                </div>
+
+                <div class="progress-wrap">
+                    <div class="skillTypeFont mt-4">Tests for Professional Drivers <span
+                            class="float-right mr-0">89%</span></div>
+                    <div class="progress">
+                        <div class="progress-bar test1" role="progressbar" aria-valuenow="89" aria-valuemin="0"
+                             aria-valuemax="100">89
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+<!--service-->
+<section class="service mt-5 pt-3 mb-100" data-aos="zoom-in" id="service">
+
+
+    <h4 class="text-center darkText pt-50  ">Fusce vitae elit fringilla, lacinia diam.</h4>
+    <h2 class="text-center mt-3 font48 darkText pb-50">Service <span class="darkBlue">Departments</span></h2>
+
+    <div class="container">
+        <div class="col-lg-12">
+            <div class="row text-center">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 mb-30 service-box">
+                    <div class="onHover bg-darkBlue p20">
+                 <span class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 421.271 421.271" style="enable-background:new 0 0 421.271 421.271;" xml:space="preserve" width="60px" height="60px" class="hovered-paths">
+    <g>
+        <path d="M405.838,258.206c5.522,0,10-4.478,10-10s-4.478-10-10-10H184.293c2.432-11.271-2.186-24.346-16.574-29.994L47.413,160.987  c-0.001,0-0.001,0-0.001,0c-11.775-4.621-23.196-3.408-31.341,3.324c-7.725,6.384-11.324,16.773-9.394,27.112  c2.084,11.163,10.319,20.157,22.03,24.058l28.645,9.542v117.81H19.004c-5.522,0-10,4.478-10,10s4.478,10,10,10h386.834  c5.522,0,10-4.478,10-10s-4.478-10-10-10h-38.351v-84.627H405.838z M35.028,196.507c-6.547-2.181-8.255-6.421-8.69-8.753  c-0.588-3.147,0.384-6.299,2.475-8.026c1.364-1.128,3.076-1.525,4.812-1.525c2.398,0,4.844,0.76,6.48,1.402l120.306,47.225  c5.53,2.171,4.684,6.39,4.063,8.103c-1.008,2.778-2.803,3.757-5.328,2.918L35.028,196.507z M347.487,342.833H77.353V231.685  l75.472,25.14c2.519,0.839,5.032,1.273,7.483,1.332c0.329,0.033,0.662,0.05,1,0.05h186.18V342.833z M43.839,146.121  c24.176,0,43.844-19.667,43.844-43.841c0-24.175-19.668-43.842-43.844-43.842C19.666,58.438,0,78.105,0,102.28  C0,126.454,19.666,146.121,43.839,146.121z M43.839,78.438c13.147,0,23.844,10.695,23.844,23.842  c0,13.146-10.696,23.841-23.844,23.841C30.694,126.121,20,115.426,20,102.28C20,89.134,30.694,78.438,43.839,78.438z   M421.271,185.771v25.123c0,5.522-4.478,10-10,10H242.692c-1.315,0-2.618-0.26-3.834-0.764L89.992,158.336  c-0.64-0.248-1.245-0.56-1.811-0.926c-1.266-0.816-2.301-1.892-3.064-3.123c-0.754-1.211-1.254-2.592-1.432-4.063  c-0.141-1.14-0.086-2.314,0.186-3.475c0.268-1.162,0.737-2.242,1.366-3.205c0.795-1.221,1.83-2.225,3.016-2.976  c1.244-0.792,2.672-1.314,4.195-1.491c0.663-0.079,1.338-0.089,2.014-0.033l166.935,10.384c5.512,0.343,9.702,5.089,9.359,10.602  c-0.342,5.512-5.06,9.73-10.602,9.359l-107.468-6.685l91.999,38.188h156.586v-15.123c0-5.522,4.478-10,10-10  S421.271,180.248,421.271,185.771z"
+              data-original="#000000" class="hovered-path active-path" data-old_color="#000000" fill="#333333"/>
+    </g>
+</svg></span>
+                        <h4 class=" mt-3 pb-20">Examination of Body</h4>
+                        <p class="text-white ">Phasellus eu scelerisque ligula. Pellentesque sollicitudin quis orci
+                            laoreet vehicula.</p>
+
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 mb-30 service-box">
+
+                    <div class="onHover bg-greenishBlue  p20">
+                  <span class="service-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                           id="Capa_1" x="0px" y="0px" viewBox="0 0 406.836 406.836"
+                           style="enable-background:new 0 0 406.836 406.836;" xml:space="preserve" width="60px"
+                           height="60px" class="">
+    <g>
+        <path d="M144.722,216.526h242.11v-15.123c0-5.522,4.478-10,10-10s10,4.478,10,10v25.123c0,5.522-4.478,10-10,10h-252.11  c-5.522,0-10-4.478-10-10S139.199,216.526,144.722,216.526z M406.836,370.688c0,5.522-4.478,10-10,10H10.002  c-5.522,0-10-4.478-10-10s4.478-10,10-10h38.349V276.15H10c-5.522,0-10-4.478-10-10c0-0.067,0.001-0.135,0.002-0.201V84.494  c0-32.173,26.174-58.347,58.347-58.347h34.124c36.635,0,67.017,27.276,71.901,62.589h39.041c5.522,0,10,4.478,10,10s-4.478,10-10,10  h-96.706c-5.522,0-10-4.478-10-10s4.478-10,10-10h37.397c-4.683-24.233-26.055-42.589-51.634-42.589H58.349  c-21.145,0-38.347,17.202-38.347,38.347V256.15h328.28c0.133-0.002,0.27-0.002,0.402,0h48.151c5.522,0,10,4.478,10,10  s-4.478,10-10,10h-38.353v84.538h38.353C402.358,360.688,406.836,365.166,406.836,370.688z M338.483,276.15H68.351v84.538h270.133  V276.15z M82.109,148.846c24.175,0,43.842,19.667,43.842,43.842c0,24.174-19.667,43.841-43.842,43.841  c-24.174,0-43.841-19.667-43.841-43.841C38.269,168.513,57.936,148.846,82.109,148.846z M82.109,168.846  c-13.146,0-23.841,10.695-23.841,23.842c0,13.146,10.695,23.841,23.841,23.841c13.146,0,23.842-10.695,23.842-23.841  C105.951,179.541,95.256,168.846,82.109,168.846z"
+              data-original="#000000" class="active-path" data-old_color="#000000" fill="#333333"/>
+    </g>
+</svg>
+                  </span>
+                        <h4 class="mt-3 pb-20">Surgery</h4>
+                        <p class="text-white ">Phasellus eu scelerisque ligula. Pellentesque sollicitudin quis orci
+                            laoreet vehicula.</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 mb-30 service-box">
+                    <div class="onHover bg-darkBlue p20">
+                <span class="service-icon">
+                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                          id="Capa_1" x="0px" y="0px" viewBox="0 0 380.662 380.662"
+                          style="enable-background:new 0 0 380.662 380.662;" xml:space="preserve" width="60px"
+                          height="60px" class="">
+    <g>
+        <path d="M150.943,107.736c0,6.106-4.95,11.057-11.056,11.057s-11.056-4.951-11.056-11.057c0-6.106,4.95-11.057,11.056-11.057  S150.943,101.629,150.943,107.736z M178.553,96.679c-6.106,0-11.056,4.95-11.056,11.057c0,6.106,4.95,11.057,11.056,11.057  c6.107,0,11.056-4.951,11.056-11.057C189.61,101.629,184.66,96.679,178.553,96.679z M215.039,343.175  c-16.498,11.44-35.8,17.487-55.819,17.487c-54.275,0-98.432-44.155-98.432-98.43V118.43c0-54.274,44.156-98.43,98.432-98.43  c54.274,0,98.431,44.155,98.431,98.43v44.011c0,5.522,4.478,10,10,10s10-4.478,10-10V118.43C277.65,53.127,224.522,0,159.22,0  C93.916,0,40.788,53.127,40.788,118.43v143.803c0,65.303,53.128,118.43,118.432,118.43c24.111,0,47.354-7.279,67.216-21.052  c4.538-3.147,5.667-9.378,2.52-13.916S219.576,340.028,215.039,343.175z M339.874,246.097v40.219c0,5.522-4.478,10-10,10h-32.115  v32.115c0,5.522-4.478,10-10,10h-40.217c-5.522,0-10-4.478-10-10v-32.115h-32.115c-5.522,0-10-4.478-10-10v-40.219  c0-5.522,4.478-10,10-10h32.115v-32.114c0-5.522,4.478-10,10-10h40.217c5.522,0,10,4.478,10,10v32.114h32.115  C335.396,236.097,339.874,240.574,339.874,246.097z M319.874,256.097h-32.115c-5.522,0-10-4.478-10-10v-32.114h-20.217v32.114  c0,5.522-4.478,10-10,10h-32.115v20.219h32.115c5.522,0,10,4.478,10,10v32.115h20.217v-32.115c0-5.522,4.478-10,10-10h32.115  V256.097z M233.142,119.661c0,28.154-16.333,54.216-41.646,66.52c-3,15.076-16.332,26.474-32.275,26.474  c-15.942,0-29.274-11.396-32.276-26.471c-25.423-12.328-41.646-38.034-41.646-66.522c0-40.761,33.162-73.922,73.923-73.922  S233.142,78.9,233.142,119.661z M172.127,179.746c0-7.117-5.79-12.907-12.907-12.907s-12.908,5.79-12.908,12.907  s5.791,12.908,12.908,12.908S172.127,186.863,172.127,179.746z M213.142,119.661c0-29.732-24.189-53.922-53.922-53.922  c-29.733,0-53.923,24.189-53.923,53.922c0,18.514,9.393,35.417,24.555,45.246c5.434-10.712,16.558-18.068,29.368-18.068  c12.804,0,23.924,7.352,29.36,18.054C203.691,155.031,213.142,137.951,213.142,119.661z"
+              data-original="#000000" class="active-path" data-old_color="#000000" fill="#333333"/>
+    </g>
+</svg>
+
+                </span>
+                        <h4 class=" mt-3 pb-20">Internal Medicine</h4>
+                        <p class="text-white ">Phasellus eu scelerisque ligula. Pellentesque sollicitudin quis orci
+                            laoreet vehicula.</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 mb-20 service-box">
+                    <div class="onHover bg-greenishBlue p20">
+                 <span class="service-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                         id="Capa_1" x="0px" y="0px" viewBox="0 0 404.447 404.447"
+                         style="enable-background:new 0 0 404.447 404.447;" xml:space="preserve" width="60px"
+                         height="60px">
+    <g>
+        <path d="M298.935,0H105.513c-5.522,0-10,4.477-10,10v241.778c0,5.523,4.478,10,10,10h63.688v19.788  c0,14.384,9.77,26.53,23.021,30.151v82.73c0,5.523,4.478,10,10,10s10-4.477,10-10v-82.73c13.252-3.621,23.021-15.767,23.021-30.151  v-19.788h63.69c5.522,0,10-4.477,10-10V10C308.935,4.477,304.457,0,298.935,0z M215.244,281.566c0,6.203-5.047,11.25-11.25,11.25  h-1.771h-1.771c-6.203,0-11.25-5.047-11.25-11.25v-19.788h26.043V281.566z M288.935,241.778h-63.69H115.513V20h173.422V241.778z   M167.401,223.684h69.645c16.741,0,30.36-13.619,30.36-30.36v-76.121c0-3.109-1.446-6.041-3.912-7.934  c-2.466-1.892-5.674-2.53-8.676-1.726l-110.365,29.573c-4.372,1.171-7.412,5.133-7.412,9.659v46.548  C137.041,210.065,150.66,223.684,167.401,223.684z M157.041,154.449l90.365-24.214v63.089c0,5.712-4.647,10.36-10.36,10.36h-69.645  c-5.713,0-10.36-4.647-10.36-10.36V154.449z M137.041,67.297c0-5.523,4.478-10,10-10h3.656v-3.656c0-5.523,4.478-10,10-10  s10,4.477,10,10v3.656h3.656c5.522,0,10,4.477,10,10s-4.478,10-10,10h-3.656v3.656c0,5.523-4.478,10-10,10s-10-4.477-10-10v-3.656  h-3.656C141.519,77.297,137.041,72.82,137.041,67.297z"
+              data-original="#000000" class="active-path" data-old_color="#000000" fill="#333333"/>
+    </g>
+</svg>
+                 </span>
+                        <h4 class="pb-20 mt-3">Blood Test</h4>
+                        <p class="text-white font30">Phasellus eu scelerisque ligula. Pellentesque sollicitudin quis
+                            orci laoreet vehicula.</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 mb-20 service-box">
+                    <div class="onHover bg-darkBlue p20">
+                <span class="service-icon">
+<svg xmlns="http://www.w3.org/2000/svg" height="60px" viewBox="0 0 60 58" width="60px" class="">
+    <g>
+        <g id="029---Hair-Follicle-Moisturising">
+            <path id="Shape"
+                  d="m59 30h-17.47c-.3496701.0001253-.6738774.1828858-.8550123.4819833-.181135.2990976-.192885.6710837-.0309877.9810167 2.6284702 5.0489551 1.3481932 11.2498324-3.064987 14.8449185-4.4131803 3.5950861-10.7448457 3.5950861-15.158026 0-4.4131802-3.5950861-5.6934572-9.7959634-3.064987-14.8449185.1618973-.309933.1501473-.6819191-.0309877-.9810167-.1811349-.2990975-.5053422-.481858-.8550123-.4819833h-17.47c-.55228475 0-1 .4477153-1 1s.44771525 1 1 1h15.925c-2.2314115 5.8299692-.3334163 12.4329017 4.6532154 16.1880639s11.8569375 3.7551622 16.8435692 0 6.8846269-10.3580947 4.6532154-16.1880639h15.925c.5522847 0 1-.4477153 1-1s-.4477153-1-1-1z"
+                  data-original="#000000" class="active-path" data-old_color="#000000" fill="#333333"/>
+            <path id="Shape"
+                  d="m35.768 3.955c-2.966 3.437-6.885 9.729-8.712 20.191-.4959469 2.5123088-1.7298635 4.8196352-3.544 6.627-3.2679795 3.4031045-3.3531588 8.7522781-.1951896 12.2577083 3.1579692 3.5054301 8.4869914 3.9770621 12.2115309 1.0807515 3.7245396-2.8963107 4.5801566-8.1772986 1.9606587-12.1014598-2.0618272-2.9094572-2.9831676-6.4748916-2.589-10.019.5921238-5.4741999 2.0046035-10.8281384 4.19-15.882.4166954-.90301843.106572-1.97502179-.7278879-2.51608936-.8344598-.54106758-1.9397055-.38679602-2.5941121.36208936zm-2.846 17.775c-.4413947 4.0223578.5887862 8.0684819 2.9 11.39 2.0373066 3.051958 1.3720361 7.1591724-1.5245131 9.4119638-2.8965491 2.2527913-7.041134 1.8864423-9.4976006-.8395138-2.4564667-2.7259562-2.3909597-6.8861851.1501137-9.53345 2.0910927-2.0936802 3.5093488-4.7640968 4.073-7.669 1.751-10.012 5.457-15.983 8.256-19.229-2.2715888 5.2395595-3.7404222 10.7915947-4.357 16.469z"
+                  data-original="#000000" class="active-path" data-old_color="#000000" fill="#333333"/><circle id="Oval"
+                                                                                                               cx="6"
+                                                                                                               cy="37"
+                                                                                                               r="1"
+                                                                                                               data-original="#000000"
+                                                                                                               class="active-path"
+                                                                                                               data-old_color="#000000"
+                                                                                                               fill="#333333"/>
+            <circle id="Oval" cx="12" cy="37" r="1" data-original="#000000" class="active-path" data-old_color="#000000"
+                    fill="#333333"/>
+            <circle id="Oval" cx="3" cy="41" r="1" data-original="#000000" class="active-path" data-old_color="#000000"
+                    fill="#333333"/>
+            <circle id="Oval" cx="9" cy="41" r="1" data-original="#000000" class="active-path" data-old_color="#000000"
+                    fill="#333333"/>
+            <circle id="Oval" cx="6" cy="45" r="1" data-original="#000000" class="active-path" data-old_color="#000000"
+                    fill="#333333"/>
+            <circle id="Oval" cx="12" cy="45" r="1" data-original="#000000" class="active-path" data-old_color="#000000"
+                    fill="#333333"/>
+            <circle id="Oval" cx="3" cy="49" r="1" data-original="#000000" class="active-path" data-old_color="#000000"
+                    fill="#333333"/>
+            <circle id="Oval" cx="9" cy="49" r="1" data-original="#000000" class="active-path" data-old_color="#000000"
+                    fill="#333333"/>
+            <circle id="Oval" cx="15" cy="49" r="1" data-original="#000000" class="active-path" data-old_color="#000000"
+                    fill="#333333"/>
+            <circle id="Oval" cx="6" cy="53" r="1" data-original="#000000" class="active-path" data-old_color="#000000"
+                    fill="#333333"/>
+            <circle id="Oval" cx="12" cy="53" r="1" data-original="#000000" class="active-path" data-old_color="#000000"
+                    fill="#333333"/>
+            <circle id="Oval" cx="18" cy="53" r="1" data-original="#000000" class="active-path" data-old_color="#000000"
+                    fill="#333333"/>
+            <circle id="Oval" cx="24" cy="53" r="1" data-original="#000000" class="active-path" data-old_color="#000000"
+                    fill="#333333"/>
+            <circle id="Oval" cx="30" cy="53" r="1" data-original="#000000" class="active-path" data-old_color="#000000"
+                    fill="#333333"/>
+            <circle id="Oval" cx="54" cy="37" r="1" data-original="#000000" class="active-path" data-old_color="#000000"
+                    fill="#333333"/>
+            <circle id="Oval" cx="48" cy="37" r="1" data-original="#000000" class="active-path" data-old_color="#000000"
+                    fill="#333333"/>
+            <circle id="Oval" cx="57" cy="41" r="1" data-original="#000000" class="active-path" data-old_color="#000000"
+                    fill="#333333"/>
+            <circle id="Oval" cx="51" cy="41" r="1" data-original="#000000" class="active-path" data-old_color="#000000"
+                    fill="#333333"/>
+            <circle id="Oval" cx="54" cy="45" r="1" data-original="#000000" class="active-path" data-old_color="#000000"
+                    fill="#333333"/>
+            <circle id="Oval" cx="48" cy="45" r="1" data-original="#000000" class="active-path" data-old_color="#000000"
+                    fill="#333333"/>
+            <circle id="Oval" cx="57" cy="49" r="1" data-original="#000000" class="active-path" data-old_color="#000000"
+                    fill="#333333"/>
+            <circle id="Oval" cx="51" cy="49" r="1" data-original="#000000" class="active-path" data-old_color="#000000"
+                    fill="#333333"/>
+            <circle id="Oval" cx="45" cy="49" r="1" data-original="#000000" class="active-path" data-old_color="#000000"
+                    fill="#333333"/>
+            <circle id="Oval" cx="54" cy="53" r="1" data-original="#000000" class="active-path" data-old_color="#000000"
+                    fill="#333333"/>
+            <circle id="Oval" cx="48" cy="53" r="1" data-original="#000000" class="active-path" data-old_color="#000000"
+                    fill="#333333"/>
+            <circle id="Oval" cx="42" cy="53" r="1" data-original="#000000" class="active-path" data-old_color="#000000"
+                    fill="#333333"/>
+            <circle id="Oval" cx="36" cy="53" r="1" data-original="#000000" class="active-path" data-old_color="#000000"
+                    fill="#333333"/>
+            <circle id="Oval" cx="3" cy="57" r="1" data-original="#000000" class="active-path" data-old_color="#000000"
+                    fill="#333333"/>
+            <circle id="Oval" cx="9" cy="57" r="1" data-original="#000000" class="active-path" data-old_color="#000000"
+                    fill="#333333"/>
+            <circle id="Oval" cx="15" cy="57" r="1" data-original="#000000" class="active-path" data-old_color="#000000"
+                    fill="#333333"/><circle id="Oval" cx="21" cy="57" r="1" data-original="#000000" class="active-path"
+                                            data-old_color="#000000" fill="#333333"/><circle id="Oval" cx="27" cy="57"
+                                                                                             r="1"
+                                                                                             data-original="#000000"
+                                                                                             class="active-path"
+                                                                                             data-old_color="#000000"
+                                                                                             fill="#333333"/><circle
+                id="Oval" cx="51" cy="57" r="1" data-original="#000000" class="active-path" data-old_color="#000000"
+                fill="#333333"/><circle id="Oval" cx="57" cy="57" r="1" data-original="#000000" class="active-path"
+                                        data-old_color="#000000" fill="#333333"/><circle id="Oval" cx="45" cy="57" r="1"
+                                                                                         data-original="#000000"
+                                                                                         class="active-path"
+                                                                                         data-old_color="#000000"
+                                                                                         fill="#333333"/><circle
+                id="Oval" cx="39" cy="57" r="1" data-original="#000000" class="active-path" data-old_color="#000000"
+                fill="#333333"/><circle id="Oval" cx="33" cy="57" r="1" data-original="#000000" class="active-path"
+                                        data-old_color="#000000" fill="#333333"/><path id="Shape"
+                                                                                       d="m11.825 1.337c-2.361 3.07-6.772 10.354-6.772 14.087-.03501208 3.4077479 1.76293036 6.5717261 4.70842967 8.2857873 2.94549933 1.7140612 6.58464133 1.7140612 9.53014063 0s4.7434418-4.8780394 4.7084297-8.2857873c0-3.733-4.411-11.017-6.772-14.087-.6432509-.84175139-1.6421053-1.33556358-2.7015-1.33556358s-2.0582491.49381219-2.7015 1.33556358zm2.701 21.663c-4.1537336-.0330169-7.49684238-3.4222036-7.473-7.576 0-2.852 3.7-9.416 6.358-12.868.2646855-.34901691.6774689-.55403325 1.1155-.55403325s.8508145.20501634 1.1155.55403325c2.658 3.452 6.358 10.016 6.358 12.868.0232888 4.1539593-3.3201067 7.5429831-7.474 7.576z"
+                                                                                       data-original="#000000"
+                                                                                       class="active-path"
+                                                                                       data-old_color="#000000"
+                                                                                       fill="#333333"/><path id="Shape"
+                                                                                                             d="m13.561 18.262c-.8647133-.1284618-1.6204972-.6517821-2.045-1.416-.3353332-1.0947067-.2361331-2.276513.277-3.3.2196532-.4910137.0115376-1.0678146-.471024-1.305462s-1.0666589-.0509883-1.321976.422462c-.056.111-1.34 2.762-.3 5.014.6655556 1.3229174 1.9131866 2.2569746 3.37 2.523.346369.0877087.7132192-.0160308.9623616-.2721408.2491425-.25611.3427266-.6256813.2455-.9695-.0972265-.3438187-.3704926-.6096505-.7168616-.6973592z"
+                                                                                                             data-original="#000000"
+                                                                                                             class="active-path"
+                                                                                                             data-old_color="#000000"
+                                                                                                             fill="#333333"/><path
+                id="Shape"
+                d="m44.293 17.707c.3904999.3903819 1.0235001.3903819 1.414 0l1-1c.3789722-.3923789.3735524-1.0160848-.0121814-1.4018186s-1.0094397-.3911536-1.4018186-.0121814l-1 1c-.3903819.3904999-.3903819 1.0235001 0 1.414z"
+                data-original="#000000" class="active-path" data-old_color="#000000" fill="#333333"/><path id="Shape"
+                                                                                                           d="m40.293 20.293-1 1c-.3789722.3923789-.3735524 1.0160848.0121814 1.4018186s1.0094397.3911536 1.4018186.0121814l1-1c.3789722-.3923789.3735524-1.0160848-.0121814-1.4018186s-1.0094397-.3911536-1.4018186-.0121814z"
+                                                                                                           data-original="#000000"
+                                                                                                           class="active-path"
+                                                                                                           data-old_color="#000000"
+                                                                                                           fill="#333333"/><path
+                id="Shape"
+                d="m44.293 21.707c1.06 1.061 1.187 1.293 1.707 1.293.4043959-.0000863.7689341-.2437275.923678-.6173454.1547439-.373618.0692299-.8036603-.216678-1.0896546l-1-1c-.3923789-.3789722-1.0160848-.3735524-1.4018186.0121814s-.3911536 1.0094397-.0121814 1.4018186z"
+                data-original="#000000" class="active-path" data-old_color="#000000" fill="#333333"/><path id="Shape"
+                                                                                                           d="m41.707 16.293-1-1c-.3923789-.3789722-1.0160848-.3735524-1.4018186.0121814s-.3911536 1.0094397-.0121814 1.4018186l1 1c.3923789.3789722 1.0160848.3735524 1.4018186-.0121814s.3911536-1.0094397.0121814-1.4018186z"
+                                                                                                           data-original="#000000"
+                                                                                                           class="active-path"
+                                                                                                           data-old_color="#000000"
+                                                                                                           fill="#333333"/><path
+                id="Shape"
+                d="m51 7c.53 0 .675-.261 1.707-1.293.2599566-.25107447.3642126-.62287789.2726972-.97250732-.0915155-.34962944-.3645604-.6226744-.7141899-.71418984-.3496294-.09151544-.7214328.01274058-.9725073.27269716l-1 1c-.2859079.28599425-.3714219.71603662-.216678 1.08965456s.5192821.61725909.923678.61734544z"
+                data-original="#000000" class="active-path" data-old_color="#000000" fill="#333333"/><path id="Shape"
+                                                                                                           d="m45.293 11.707c.3904999.3903819 1.0235001.3903819 1.414 0l1-1c.3789722-.3923789.3735524-1.01608478-.0121814-1.40181858-.3857338-.38573379-1.0094397-.39115363-1.4018186-.01218142l-1 1c-.3903819.3904999-.3903819 1.0235001 0 1.414z"
+                                                                                                           data-original="#000000"
+                                                                                                           class="active-path"
+                                                                                                           data-old_color="#000000"
+                                                                                                           fill="#333333"/><path
+                id="Shape"
+                d="m50.293 10.707c1.06 1.061 1.187 1.293 1.707 1.293.4043959-.0000863.7689341-.2437275.923678-.6173454.1547439-.373618.0692299-.8036603-.216678-1.0896546l-1-1c-.3923789-.37897221-1.0160848-.37355237-1.4018186.01218142-.3857338.3857338-.3911536 1.00943968-.0121814 1.40181858z"
+                data-original="#000000" class="active-path" data-old_color="#000000" fill="#333333"/><path id="Shape"
+                                                                                                           d="m46.293 6.707c.3923789.37897221 1.0160848.37355237 1.4018186-.01218142.3857338-.3857338.3911536-1.00943969.0121814-1.40181858l-1-1c-.3923789-.37897221-1.0160848-.37355237-1.4018186.01218142-.3857338.3857338-.3911536 1.00943969-.0121814 1.40181858z"
+                                                                                                           data-original="#000000"
+                                                                                                           class="active-path"
+                                                                                                           data-old_color="#000000"
+                                                                                                           fill="#333333"/>
+        </g></g> </svg>
+
+                </span>
+                        <h4 class="pb-20 mt-3">Dermatology</h4>
+                        <p class="text-white font30">Phasellus eu scelerisque ligula. Pellentesque sollicitudin quis
+                            orci laoreet vehicula.</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 mb-20 service-box">
+                    <div class="onHover bg-greenishBlue p20">
+                 <span class="service-icon">
+                   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                        id="Capa_1" x="0px" y="0px" viewBox="0 0 377.608 377.608"
+                        style="enable-background:new 0 0 377.608 377.608;" xml:space="preserve" width="60px"
+                        height="60px" class="hovered-paths">
+    <g>
+        <path d="M73.624,150.449H10c-5.523,0-10-4.478-10-10s4.477-10,10-10h69.143c3.435,0,6.629,1.763,8.46,4.669l19.917,31.609  l30.668-78.283c1.547-3.949,5.431-6.466,9.657-6.347c4.239,0.146,7.924,2.951,9.195,6.998l29.168,92.889l10.575-43.879  c1.083-4.492,5.102-7.657,9.722-7.657h49.642c5.523,0,10,4.478,10,10s-4.477,10-10,10h-41.765l-17.183,71.298  c-1.053,4.369-4.891,7.499-9.383,7.651c-0.114,0.004-0.228,0.006-0.342,0.006c-4.354,0-8.226-2.825-9.538-7.004L146.46,122.16  l-27.537,70.291c-1.376,3.513-4.612,5.952-8.368,6.308c-3.751,0.364-7.393-1.433-9.403-4.624L73.624,150.449z M351.585,55.178  c-21.487-20.786-49.567-32.234-79.068-32.234c-25.933,0-50.732,8.771-70.759,24.866c-20.026-16.096-44.825-24.866-70.757-24.866  c-29.504,0-57.585,11.448-79.07,32.234c-12.786,12.37-20.96,27.135-24.294,43.884c-1.078,5.416,2.438,10.682,7.855,11.76  c5.415,1.073,10.681-2.438,11.76-7.855c2.561-12.862,8.64-23.792,18.586-33.414c17.735-17.158,40.877-26.608,65.164-26.608  c23.857,0,46.548,9.018,63.892,25.393c3.853,3.638,9.875,3.639,13.729,0c17.344-16.375,40.036-25.393,63.894-25.393  c24.284,0,47.425,9.45,65.162,26.608c13.639,13.196,20.156,29.078,19.923,48.554c-0.68,56.93-60.458,132.119-116.174,183.503  c-2.875,2.65-5.573,5.156-8.116,7.518c-15.009,13.937-25.269,23.463-31.554,25.339c-6.287-1.876-16.551-11.407-31.566-25.35  c-2.539-2.357-5.234-4.86-8.104-7.508c-20.355-18.771-70.681-68.264-98.307-122.307c-2.514-4.917-8.539-6.867-13.456-4.353  c-4.917,2.514-6.866,8.538-4.352,13.456c29.093,56.912,81.413,108.407,102.556,127.905c2.853,2.631,5.531,5.118,8.055,7.462  c20.917,19.423,31.417,29.172,43.872,30.809c0.433,0.057,0.868,0.085,1.303,0.085s0.87-0.028,1.302-0.085  c12.456-1.637,22.952-11.382,43.861-30.798c2.527-2.347,5.209-4.838,8.066-7.472c28.523-26.306,121.662-118.323,122.613-197.966  C377.899,93.42,369.146,72.168,351.585,55.178z"
+              data-original="#000000" class="hovered-path active-path" data-old_color="#000000" fill="#333333"/>
+    </g>
+</svg>
+                 </span>
+                        <h4 class="pb-20 mt-3">Cardio</h4>
+                        <p class="text-white font30">Phasellus eu scelerisque ligula. Pellentesque sollicitudin quis
+                            orci laoreet vehicula.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Gallery-->
+<section class="gallery mt-5 pt-4 mb-100" data-aos="fade-up" id="gallery">
+    <!--            <h4 class=" pb-10 ls-1 text-center">Gallery</h4>-->
+    <h2 class="font60 font48 darkText text-center"><span class="greenishBlue">Patient</span> Gallery</h2>
+    <p class="text-center mx-auto mb-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in velit
+        dolor. Vivamus gravida, <br>neque nec interdum cursus, erat ligula.</p>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="responsive m-3">
+                <div class="gallery">
+                    <img src="images/gallery/1.jpg" alt="Forest" width="600" height="400">
+                </div>
+                <div class="overlay"></div>
+            </div>
+
+            <div class="responsive m-3">
+                <div class="gallery">
+                    <img src="images/gallery/2.jpg" alt="Northern Lights" width="600" height="400">
+                </div>
+                <div class="overlay"></div>
+            </div>
+
+            <div class="responsive m-3">
+                <div class="gallery">
+                    <img src="images/gallery/4.jpg" alt="Northern Lights" width="600" height="400">
+                </div>
+                <div class="overlay"></div>
+            </div>
+
+            <div class="responsive m-3">
+                <div class="gallery">
+                    <img src="images/gallery/5.jpg" alt="Northern Lights" width="600" height="400">
+                </div>
+                <div class="overlay"></div>
+            </div>
+            <div class="responsive m-3">
+                <div class="gallery">
+                    <img src="images/gallery/6.jpg" alt="Northern Lights" width="600" height="400">
+                </div>
+                <div class="overlay"></div>
+            </div>
+            <div class="responsive m-3">
+                <div class="gallery">
+                    <img src="images/gallery/3.jpg" alt="Northern Lights" width="600" height="400">
+                </div>
+                <div class="overlay"></div>
+            </div>
+            <div class="clearfix"></div>
+
+        </div>
+
+    </div>
+
+</section>
+<!--who we are-->
+<section class="section">
+    <div class="container-fluid px-0 text-image-block">
+        <div class="row no-gutters">
+            <div class="col-md-6 image-col " data-aos="fade-right">
+                <img src="./images/why-choose-us.png" alt="">
+            </div>
+            <div data-aos="fade-left" class="col-md-6 text-col">
+                <div class="title-wrap">
+                    <h4 class="darkText pt-50">See the Difference</h4>
+                    <h2 class="mt-3 font48 darkText pb-50">Why  <span class="darkBlue">Choose Us?</span></h2>
+
+                </div>
+                <div class="mt-2 mt-lg-4"></div>
+                <ul class="numbered-list-xl">
+                    <li data-num="01.">
+                        <h5>Patient-Centred</h5>
+                        While our team brings important experience and knowledge, we know that each patient is the expert in their own life.
+                    </li>
+                    <li data-num="02.">
+                        <h5>Comprehensive</h5>
+                        We offer comprehensive health care focusing on the whole person, at all ages and stages of life.
+                    </li>
+                    <li data-num="03.">
+                        <h5>Patient-Centred</h5>
+                        We have flexible hours and are open on certain evenings and during the weekend, to accommodate your schedule.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Blog-->
+<section class=" blog pt-4 pb-50 pb-100" data-aos="fade-up" id="blog">
+    <h2 class="text-center font48  pt-50">Our <span class="greenishBlue">Blog</span></h2>
+    <p class="text-center pb-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in velit dolor.
+        Vivamus gravida,<br> neque nec interdum cursus, erat ligula.</p>
+    <div class="container mt-4 mb-3 ">
+        <div class="row">
+            <div class="owl-carousel blog1">
+
+                <div class="item">
+                    <div class=" blog-card mt-3 mb-30">
+                        <div class="darkText blogWrap">
+                            <img src="images/medical/blog-list1.png" alt="img"  width="100%" />
+                            <div class="blog-content p-3 pt-50 mt-30 ">
+                                <h3 class="mb-50">Important Medical Info</h3>
+                                <p class="text pb-30">Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. </p>
+                                <a href="#"><p class="greenishBlue load">Load More&nbsp;<i class="fa fa-long-arrow-right"></i></p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class=" blog-card mt-3 mb-30">
+
+                        <div class="darkText blogWrap ">
+                            <img src="images/medical/blog-list2.png" width="100%">
+                            <div class="blog-content p-3 pt-50 mt-30">
+                                <h3 class="mb-50">Doctors Guidelines</h3>
+                                <p class="text pb-30">Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. </p>
+                                <a href="#"><p class="greenishBlue load">Load More&nbsp;<i class="fa fa-long-arrow-right"></i></p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class=" blog-card mt-3 mb-30">
+
+                        <div class="darkText blogWrap ">
+                            <img src="images/medical/blog-list1.png" width="100%">
+                            <div class="blog-content p-3 pt-50 mt-30">
+                                <h3 class="mb-50">Medical Instruction</h3>
+                                <p class="text pb-30">Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. </p>
+                                <a href="#"><p class="greenishBlue load">Load More&nbsp;<i class="fa fa-long-arrow-right"></i></p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class=" blog-card mt-3 mb-30">
+
+                        <div class="darkText blogWrap">
+                            <img src="images/medical/blog-list2.png" width="100%">
+                            <div class="blog-content p-3 pt-50 mt-30">
+                                <h3 class="mb-50">Support Doctors</h3>
+                                <p class="text pb-30">Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. </p>
+                                <a href="#"><p class="greenishBlue load">Load More &nbsp;<i class="fa fa-long-arrow-right"></i> </p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Our Team-->
+<section data-aos="fade-up" class="our-team padding-lg mb-100">
+    <div class="container">
+        <div class="mb-60">
+            <h2 class="text-center  font48  pt-50 pb-30">Our <span class="greenishBlue">Specialist</span></h2>
+            <p class="text-center pb-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in velit dolor.
+                Vivamus gravida,<br> neque nec interdum cursus, erat ligula.</p>
+        </div>
+
+            <ul class="row" style="list-style: none;">
+                <li class="col-12 col-md-6 col-lg-3">
+                    <div class="cnt-block equal-hight" style="height: 349px;">
+                        <figure><img src="https://premid.svarun.in/images/team-1.png" class="img-responsive" alt=""></figure>
+                        <h3><a href="#">Dr.Anjelina Rossy</a></h3>
+                        <p>Department of Cardiology</p>
+                        <ul class="follow-us">
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        </ul>
+                        <div class="time-slot pt-20"><i class="fa fa-clock"></i><span class="days">Sat - Thu</span> 5.00pm - 7:00pm</div>
+                    </div>
+                </li>
+                <li class="col-12 col-md-6 col-lg-3">
+                    <div class="cnt-block equal-hight" style="height: 349px;">
+                        <figure><img src="https://premid.svarun.in/images/team-5.png" class="img-responsive" alt=""></figure>
+                        <h3><a href="#">Dr.Anjelina Rossy</a></h3>
+                        <p>Department of Cardiology</p>
+                        <ul class="follow-us clearfix">
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        </ul>
+                        <div class="time-slot pt-20"><i class="fa fa-clock"></i><span class="days">Sat - Thu</span> 5.00pm - 7:00pm</div>
+                    </div>
+                </li>
+                <li class="col-12 col-md-6 col-lg-3">
+                    <div class="cnt-block equal-hight" style="height: 349px;">
+                        <figure><img src="https://premid.svarun.in/images/team-4.png" class="img-responsive" alt=""></figure>
+                        <h3><a href="#">Dr.Manish </a></h3>
+                        <p>Department of Cardiology</p>
+                        <ul class="follow-us clearfix">
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        </ul>
+                        <div class="time-slot pt-20"><i class="fa fa-clock"></i><span class="days">Sat - Thu</span> 5.00pm - 7:00pm</div>
+                    </div>
+                </li>
+                <li class="col-12 col-md-6 col-lg-3">
+                    <div class="cnt-block equal-hight" style="height: 349px;">
+                        <figure><img src="https://premid.svarun.in/images/team-4.png" class="img-responsive" alt=""></figure>
+                        <h3><a href="#">Dr.Atul </a></h3>
+                        <p>Department of Cardiology</p>
+                        <ul class="follow-us clearfix">
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        </ul>
+                        <div class="time-slot pt-20"><i class="fa fa-clock"></i><span class="days">Sat - Thu</span> 5.00pm - 7:00pm</div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+
+
+</section>
+<!--Appointment-->
+<section class="contact mt-5" id="appointment">
+    <div class="row">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 col-12 d-none d-sm-block">
+            <img src="./images/banner-callus.png" alt="doc" class="img-responsive"/>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 col-12 container contact-form" data-aos="fade-left">
+            <div class="AppointmentForm my-5">
+                <form class="form-horizontal px-3 px-lg-5  px-sm-3 px-md-3 py-4" role="form" id="contactForm">
+                    <h4 class="text-center my-3 font-35 pb-20">Looking for a <span
+                            class="darkBlue">Certified Doctor?</span></h4>
+                    <p class="text-center pb-30">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
                     <div class="form-group">
-                        <input type="text" class="form-control" id="name" placeholder="Enter your name..." required data-error="Please check the field" />
+                        <input type="text" class="form-control form-input" id="name" placeholder="Enter your name..."
+                               required data-error="Please check the field"/>
                         <div class="help-block with-errors"></div>
                     </div>
+
                     <div class="form-group">
-                        <input type="email" class="form-control" id="email" placeholder="Enter your emailid..." required>
+                        <input type="email" class="form-control form-input" id="email"
+                               placeholder="Enter your email id..." required />
                         <div class="help-block with-errors"></div>
                     </div>
+
                     <div class="form-group">
-                        <input type="text" class="form-control" id="phone" placeholder="Enter your mobile no..." required>
+                        <input type="text" class="form-control form-input" id="phone"
+                               placeholder="Enter your mobile no..." required>
                         <div class="help-block with-errors"></div>
                     </div>
+
                     <div class="form-group">
-                        <textarea class="form-control" rows="5" id="message" placeholder="Message here..." required></textarea>
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-6 ml--15">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control form-input" id="date"
+                                               placeholder="Date" required />
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 ml-10">
+                                    <div class="form-group">
+                                        <select class="form-control form-input" required id="gender" >
+                                            <option disabled selected>--Gender--</option>
+                                            <option>Male</option>
+                                            <option>Female</option>
+                                        </select>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea class="form-control" rows="5" id="message" placeholder="Message here..." required
+                                  cols="10" rows="5"></textarea>
                         <div class="help-block with-errors"></div>
                     </div>
-                    <button type="submit" id="form-submit" aria-label='Thanks' class='h-button centered w-100' data-text='Send' >
-                        <span>T</span>
-                        <span>h</span>
-                        <span>a</span>
-                        <span>n</span>
-                        <span>k</span>
-                        <span>s</span>
+                    <button class="button button--wayra button--border-thick button--text-upper button--size-s centered w-100">
+                        Send a request
                     </button>
+
                 </form>
                 <div id="msgSubmit" class="h3 text-center hidden"></div>
                 <div class="clearfix"></div>
-                
-            </div>
-                </div>
-        
-            </div>
-        </section>
-        
-        <section class="gallery mt-5 pt-4" id="gallery">
-        
-            <h2 class="text-center"><span class="darkBlue">Patient</span> Gallery</h2>
-            <p class="text-center mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in velit dolor. Vivamus gravida, <br>neque nec interdum cursus, erat ligula.</p>
-        
-            <div class="container">
-                <div class="row justify-content-center">
-        <div class="responsive m-3">
-  <div class="gallery">
-      <img src="images/medical/man-wearing-a-face-mask-having-a-video-call-4031817.jpg" alt="Forest" width="600" height="400">
-  </div>
-            <div class="overlay"></div>
-</div>
-
-<div class="responsive m-3">
-  <div class="gallery">
-      <img src="images/medical/photo-of-woman-holding-red-stethoscope-3408368.jpg" alt="Northern Lights" width="600" height="400">
-  </div>
-    <div class="overlay"></div>
-</div>
-
-<div class="responsive m-3">
-    <div class="gallery">
-        <img src="images/medical/three-person-looking-at-x-ray-result-1170979.jpg" alt="Northern Lights" width="600" height="400">
-    </div>
-    <div class="overlay"></div>
-  </div>
-
-  <div class="responsive m-3">
-    <div class="gallery">
-        <img src="images/medical/woman-carrying-baby-3259629.jpg" alt="Northern Lights" width="600" height="400">
-    </div>
-      <div class="overlay"></div>
-  </div>
-  <div class="responsive m-3">
-    <div class="gallery">
-        <img src="images/medical/woman-giving-birth-to-baby-via-c-section-3259627.jpg" alt="Northern Lights" width="600" height="400">
-    </div>
-      <div class="overlay"></div>
-  </div>
-  <div class="responsive m-3">
-    <div class="gallery">
-        <img src="images/medical/woman-having-a-video-call-4031818.jpg" alt="Northern Lights" width="600" height="400">
-    </div>
-      <div class="overlay"></div>
-  </div>
-  <div class="clearfix"></div>
-               
-                 </div>
 
             </div>
-        
-        </section>
-        
-        <section class=" blog mt-5 pt-4 pb-5" id="blog">
-            <h2 class="text-center">Our <span class="greenishBlue">Blog</span></h2>
-            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in velit dolor. Vivamus gravida,<br> neque nec interdum cursus, erat ligula.</p>
-    <div class="container mt-4 mb-3 ">
-            
-        <div class="row justify-content-center">
-        
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 blog-card mt-3">
-           
-                <div class="darkText blogWrap">
-                     <img src="images/medical/blog-list1.png" width="100%" >
-                    <div class="blog-content p-3">
-                <h6>Important Medical Info</h6>
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lobortis.</p>
-                      <a href="#"><p class="greenishBlue load">Load More...</p></a>
-                        </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 blog-card mt-3">
-           
-                <div class="darkText blogWrap ">
-                     <img src ="images/medical/blog-list2.png" width="100%">
-                    <div class="blog-content p-3">
-                <h6>Doctors Guidelines</h6>
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lobortis.</p>
-                     <a href="#"><p class="greenishBlue load">Load More...</p></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 blog-card mt-3">
-            
-                <div class="darkText blogWrap ">
-                    <img src="images/medical/blog-list1.png" width="100%">
-                    <div class="blog-content p-3">
-                <h6>Medical Instruction</h6>
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lobortis.</p>
-                    <a href="#"><p class="greenishBlue load">Load More...</p></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 blog-card mt-3">
-            
-                <div class="darkText blogWrap">
-                    <img src="images/medical/blog-list2.png" width="100%">
-                    <div class="blog-content p-3">
-                <h6>Support Doctors</h6>
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lobortis.</p>
-                     <a href="#"><p class="greenishBlue load">Load More...</p></a>
-                    </div>
-                </div>
-            </div>
-            
-        
-        </div>    
-            
-        
-            </div>
-</section>
-        
-        
-        <!-- TESTIMONIALS -->
-<section class="testimonials bg-greenishBlue">
-	<div class="container">
-
-        <h2 class="darkText text-center pt-4">Happy <span class="text-white">Patient</span></h2>
-        <p class="text-center w-50 mx-auto light-text tiny-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in velit dolor. Vivamus gravida, neque nec interdum cursus, erat ligula.</p>
-      <div class="row">
-        <div class="col-sm-12">
-          <div id="customers-testimonials" class="owl-carousel">
-
-            <!--TESTIMONIAL 1 -->
-            <div class="item">
-              <div class="shadow-effect">
-                <img class="img-circle" src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg" style="border-radius: 100%;" alt="">
-                  <h6 class="name">Albert Joseph</h6>
-                  <span class="place">London, UK</span>
-                <p class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in velit dolor. Vivamus gravida, neque nec interdum cursus, erat ligula porta nibh.</p>
-              </div>
-            </div>
-            <!--END OF TESTIMONIAL 1 -->
-            <!--TESTIMONIAL 2 -->
-            <div class="item">
-              <div class="shadow-effect">
-                <img class="img-circle" src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg" style="border-radius: 100%;" alt="">
-                   <h6 class="name">Fionna Smith</h6>
-                  <span class="place">United States of America (USA)</span>
-                <p class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in velit dolor. Vivamus gravida, neque nec interdum cursus, erat ligula porta nibh.</p>
-              </div>
-            </div>
-            <!--END OF TESTIMONIAL 2 -->
-            <!--TESTIMONIAL 3 -->
-            <div class="item">
-              <div class="shadow-effect">
-                <img class="img-circle" src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg" style="border-radius: 100%;"alt="">
-                   <h6 class="name">Albert Joseph</h6>
-                  <span class="place">London, UK</span>
-                <p class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in velit dolor. Vivamus gravida, neque nec interdum cursus, erat ligula porta nibh.</p>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-      </div>
-    </section>
-        
-        <section class="map mt-5 mb-5">
-        
-        <div class="container">
-            <div class="row">
-            
-                <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12 col-12"></div>
-                <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12 col-12 address light-grey p-4">
+
+    </div>
+</section>
+<!-- TESTIMONIALS -->
+<section class="testimonials bg-greenishBlue pb-100">
+    <div class="container">
+        <h2 class="font60 font48 darkText text-center pt-50 pb-20">Happy <span class="text-white">Patient</span></h2>
+        <p class="text-center w-50 mx-auto light-text tiny-text pb-50">Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Vivamus in velit dolor. Vivamus gravida, neque nec interdum cursus, erat ligula.</p>
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="customers-testimonials" class="owl-carousel owl1">
+                    <!--TESTIMONIAL 1 -->
+                    <div class="item">
+                        <div class="shadow-effect">
+                            <img class="img-circle"
+                                 src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg"
+                                 style="border-radius: 100%;" alt="">
+                            <h6 class="name pt-15">Albert Joseph</h6>
+                            <span class="place pt-5 mb-10" >London, UK</span>
+                            <p class="message pt-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in velit
+                                dolor. Vivamus gravida, neque nec interdum cursus, erat ligula porta nibh.</p>
+                        </div>
+                    </div>
+                    <!--END OF TESTIMONIAL 1 -->
+                    <!--TESTIMONIAL 2 -->
+                    <div class="item">
+                        <div class="shadow-effect">
+                            <img class="img-circle"
+                                 src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg"
+                                 style="border-radius: 100%;" alt="">
+                            <h6 class="name pt-15">Fionna Smith</h6>
+                            <span class="place pt-5 mb-10">United States of America (USA)</span>
+                            <p class="message pt-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in velit
+                                dolor. Vivamus gravida, neque nec interdum cursus, erat ligula porta nibh.</p>
+                        </div>
+                    </div>
+                    <!--END OF TESTIMONIAL 2 -->
+                    <!--TESTIMONIAL 3 -->
+                    <div class="item">
+                        <div class="shadow-effect">
+                            <img class="img-circle"
+                                 src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg"
+                                 style="border-radius: 100%;" alt="">
+                            <h6 class="name pt-15">Albert Joseph</h6>
+                            <span class="place pt-5 mb-10">London, UK</span>
+                            <p class="message pt-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in velit
+                                dolor. Vivamus gravida, neque nec interdum cursus, erat ligula porta nibh.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Contact-->
+<section class="map mt-5 mb-5" id="contact">
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12 col-12"></div>
+            <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12 col-12 address light-grey p-4">
                 <h6 class="address-name light-grey">Lorem Ipsum Dolor Sit Amet Consectetur</h6>
-                    <h3 class="light-grey">Hex Medical Lab</h3>
-                    <p class="tiny-text">123 Stree New York City , United States Of America.</p> <p class="tiny-text">Office Telephone : 001 01085379709 <br>Mobile : 001 63165370895</p><p class="tiny-text"> mail : admin@website.com <br> Inquiries : email@website.com Mon-Fri: 9am to 6pm</p>
-                </div>
-            
+                <h3 class="light-grey">Hex Medical Lab</h3>
+                <p class="tiny-text">123 Stree New York City , United States Of America.</p>
+                <p class="tiny-text">Office Telephone : 001 01085379709 <br>Mobile : 001 63165370895</p>
+                <p class="tiny-text"> mail : admin@website.com <br> Inquiries : email@website.com Mon-Fri: 9am to 6pm
+                </p>
             </div>
-            
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer data-aos="fade-up">
+
+    <div class="row text-center py-4">
+        <div class="col-12"><p>© 2020 Health Pro. Made With Love By Fulgid.</p></div>
+        <div class="col-12 mt-3">
+            <div class="icon-so social-media">
+                <ul class="icon-effect icon-effect-1a list-inline d-flex justify-content-center">
+                    <li><a href="#" class="icon"><i class="fa fa-facebook social-media-icon px-2"></i></a></li>
+                    <li><a href="#" class="icon"><i class="fa fa-twitter social-media-icon"></i></a></li>
+                    <li><a href="#" class="icon"><i class="fa fa-youtube social-media-icon"></i></a></li>
+                    <li><a href="#" class="icon"><i class="fa fa-instagram social-media-icon"></i></a></li>
+                    <li><a href="#" class="icon"><i class="fa fa-linkedin social-media-icon"></i></a></li>
+                </ul>
             </div>
-        
-        </section>
-    <!-- END OF TESTIMONIALS -->
-        
-        <footer>
-        
-        <div class="row text-center py-4">
-            <div class="col-12"><p>© 2020 Hex Lab. Made With Love By Fulgid.</p></div>
-            <div class="col-12 mt-3">
-                            <div class="icon-so social-media">
-                    <ul class="icon-effect icon-effect-1a list-inline d-flex justify-content-center">
-                        <li><a href="#" class="icon"><i class="fa fa-facebook social-media-icon px-2"></i></a></li>
-                        <li><a href="#" class="icon"><i class="fa fa-twitter social-media-icon"></i></a></li>
-                        <li><a href="#" class="icon"><i class="fa fa-youtube social-media-icon"></i></a></li>
-                        <li><a href="#" class="icon"><i class="fa fa-instagram social-media-icon"></i></a></li>
-                        <li><a href="#" class="icon"><i class="fa fa-linkedin social-media-icon"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            </div>
-            
-        </footer>
-        
-        
-        
-        <!-- Optional JavaScript -->
+        </div>
+    </div>
+
+</footer>
+
+<!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"  crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -502,10 +928,11 @@
     AOS.init();
 
 </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
     <script type="text/javascript">
-        $('body').append('<div style="" id="loadingDiv"><div class="loader">Loading...</div></div>');
+        $('body').append('<div style="" id="loadingDiv"><div ><svg id="stringPreloader" viewbox="5 0 45 25"><path   d="m0,10 q10,10 20,0 t20,0 t20,0 t20,0 t20,0"  /> </svg></div></div>');
         $(window).on('load', function(){
             setTimeout(removeLoader, 2000); //wait for page load PLUS two seconds.
         });
@@ -517,6 +944,6 @@
         }
     </script>
 
-    </body>
+</body>
 
 </html>

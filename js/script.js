@@ -16,7 +16,6 @@ function myFunction(x) {
 }
 
 
-
 //Testimonials
 jQuery(document).ready(function($) {
         		"use strict";
@@ -35,7 +34,7 @@ jQuery(document).ready(function($) {
 		                items: 1
 		              },
 		              768: {
-		                items: 2
+		                items: 1
 		              },
 		              1170: {
 		                items: 3
@@ -47,27 +46,61 @@ jQuery(document).ready(function($) {
 
 //smooth scroll for menu link
 
-$(document).ready(function(){
-	// Add smooth scrolling to all links
-	$("a").on('click', function(event) {
+$(' a').on('click', function(e) {
+	var el = $( e.target.getAttribute('href') );
+	var elOffset = el.offset().top;
+	var elHeight = el.height();
+	var windowHeight = $(window).height();
+	var offset;
 
-		// Make sure this.hash has a value before overriding default behavior
-		if (this.hash !== "") {
-			// Prevent default anchor click behavior
-			event.preventDefault();
+	if (elHeight < windowHeight) {
+		offset = elOffset - ((windowHeight / 2) - (elHeight / 2));
+	}
+	else {
+		offset = elOffset;
+	}
+	var speed = 700;
+	$('html, body').animate({scrollTop:offset}, speed);
+});
 
-			// Store hash
-			var hash = this.hash;
 
-			// Using jQuery's animate() method to add smooth page scroll
-			// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-			$('html, body').animate({
-				scrollTop: $(hash).offset().top
-			}, 800, function(){
+//clients
+$('.blog1').owlCarousel({
+	loop:true,
+	items:3,
+	dots: true,
+	margin:50,
+	autoplay:true,
+	autoplayTimeout:1000,
+	autoplayHoverPause: true,
+	responsive: {
+		0: {
+			items: 1
+		},
+		600: {
+			items: 1
+		},
+		1000: {
+			items: 3
+		}
+	}
+});
+//progress bar
+$(function () {
+	var $section = $('.progress-element');
 
-				// Add hash (#) to URL when done scrolling (default click behavior)
-				window.location.hash = hash;
+	$(document).bind('scroll', function (ev) {
+		var scrollOffset = $(document).scrollTop();
+		var containerOffset = $section.offset().top - window.innerHeight;
+
+		if (scrollOffset > containerOffset) {
+			$(document).unbind('scroll');
+			$(".progress-element").each(function () {
+				var progressBar = $(".progress-bar");
+				progressBar.each(function (indx) {
+					$(this).animate({"width": $(this).attr("aria-valuenow") + "%"}, 800);
+				});
 			});
-		} // End if
+		}
 	});
 });
