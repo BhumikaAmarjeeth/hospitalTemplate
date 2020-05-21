@@ -46,7 +46,7 @@ jQuery(document).ready(function($) {
 
 //smooth scroll for menu link
 
-$(' a').on('click', function(e) {
+$('.menu').on('click', function(e) {
 	var el = $( e.target.getAttribute('href') );
 	var elOffset = el.offset().top;
 	var elHeight = el.height();
@@ -59,7 +59,7 @@ $(' a').on('click', function(e) {
 	else {
 		offset = elOffset;
 	}
-	var speed = 700;
+	var speed = 800;
 	$('html, body').animate({scrollTop:offset}, speed);
 });
 
@@ -98,9 +98,33 @@ $(function () {
 			$(".progress-element").each(function () {
 				var progressBar = $(".progress-bar");
 				progressBar.each(function (indx) {
-					$(this).animate({"width": $(this).attr("aria-valuenow") + "%"}, 800);
+					$(this).animate({"width": $(this).attr("aria-valuenow") + "%"}, 400);
 				});
 			});
 		}
 	});
 });
+
+
+//Lightbox
+$(document).on("click", '[data-toggle="lightbox"]', function(event) {
+	event.preventDefault();
+	$(this).ekkoLightbox();
+});
+
+//gototop
+var btn = $('#button');
+$(window).scroll(function() {
+	if ($(window).scrollTop() > 300) {
+		btn.addClass('show');
+	} else {
+		btn.removeClass('show');
+	}
+});
+
+btn.on('click', function(e) {
+	e.preventDefault();
+	$('html, body').animate({scrollTop:0}, '300');
+});
+
+//loader
