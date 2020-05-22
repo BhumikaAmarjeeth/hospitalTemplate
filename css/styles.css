@@ -596,13 +596,26 @@ opacity: 1;
     line-height: 15px;
     
 }
+.mb-16{
+    margin-bottom: 16px;
+}
+.post-meta-date{
+    position: relative;
+    top: -4px;
+    color: #c2c2c2;
+    font-size: 12px ;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
 /*contact*/
 
-.women-doctor{
-background-image: url('../images/medical/photo-of-woman-holding-red-stethoscope-3408368.jpg');
-    background-size: cover;
-    background-position: center;
-}
+/*.women-doctor{*/
+/*background-image: url('../images/medical/photo-of-woman-holding-red-stethoscope-3408368.jpg');*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*}*/
 
 .contact-form{
     /*background-image: url('../images/medical/bg-img1.png');*/
@@ -695,13 +708,13 @@ div.gallery:hover {
     box-shadow: 0px 1px 1px #00000029;
 border-radius: 0px;
 opacity: 1;
-    -webkit-transition: background-color .2s, -webkit-transform .2s;
-    transition: background-color .2s, transform .2s;
+    -webkit-transition: all .5s;
+    transition: all .5s;
 }
 
 .blogWrap:hover{
-    box-shadow: 0px 3px 3px #00000029;
-    transform: scale(1.01);
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.15);;
+    transform: translateY(-5px);
 }
 .blog-content .text{
     font-size: 14px;
@@ -709,11 +722,24 @@ opacity: 1;
 }
 
 .blog-content .load{
-    font-size: 14px;
+
     line-height: 15px;
-    letter-spacing: 0.26px;
+   color: #484848;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.blog-content .load i{
+    transition: right .3s ease 0s;
+    position: relative;
+    right: 0;
+}
+.blog-content .load:hover{
+    color:#3264F5;
 }
 
+.blog-content .load:hover i {
+    right: -6px;
+}
 /*Footer*/
 
 
@@ -768,7 +794,7 @@ button{
 
     stroke: #00BCD4;
 
-    stroke-width: 4;
+    stroke-width: 3;
     stroke-dasharray: 1000px;
     stroke-dashoffset: 1000px;
     animation: shift 2s infinite forwards normal linear;
@@ -1026,7 +1052,7 @@ a:hover{
 }
 
 .blog-content{
-    padding: 1rem 30px !important;
+    padding: 3rem 30px !important;
 }
 ul.list-unstyled li:not(:last-child) {
     margin-bottom: 8px; }
@@ -1508,4 +1534,36 @@ position: absolute;
     #button {
         margin: 30px;
     }
+}
+
+/*Counter*/
+
+.counter {
+    background-color:#fff;
+    padding: 20px 0;
+    border-radius: 0px;
+}
+
+.count-title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.count-text {
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 20px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.fa-2x {
+    margin: 0 auto;
+    float: none;
+    display: table;
+    color: #3264f5;
+    font-size: 35px;
 }
