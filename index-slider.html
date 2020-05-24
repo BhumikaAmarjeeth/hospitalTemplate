@@ -23,7 +23,10 @@
     <!-- Animator CSS -->
     <link rel="stylesheet" href="./css/animate.css"/>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/slider.css">
     <style>
+
+
 
     </style>
 </head>
@@ -58,34 +61,89 @@
         </div>
     </nav>
 </header>
-<header id="home">
 
-    <div class="container mt--10">
-        <!-- <div class=" "> -->
-        <div class="centerAlign section-title">
-<!--            <h1 class="text-border1"><i class="fa fa-heartbeat" aria-hidden="true"></i>-->
-<!--            </h1>-->
-            <h5 class="darkText pb-20">We care for your</h5>
 
-            <h1 class="greenishBlue heading  font-weight-bold  pb-20">Medical <span class="darkBlue">Health</span></h1>
-            <p class="font20 w-50 pb-30 darkText">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
-                velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec
-                sagittis sem nibh id elit.</p>
-            <button class="button button--wayra button--border-thick button--text-upper button--size-s">Let's Start
-            </button>
-            <!-- </div> -->
+<!--<header id="home">-->
+
+<!--    <div class="container mt&#45;&#45;10">-->
+<!--        &lt;!&ndash; <div class=" "> &ndash;&gt;-->
+<!--        <div class="centerAlign section-title">-->
+<!--&lt;!&ndash;            <h1 class="text-border1"><i class="fa fa-heartbeat" aria-hidden="true"></i>&ndash;&gt;-->
+<!--&lt;!&ndash;            </h1>&ndash;&gt;-->
+<!--            <h5 class="darkText pb-20">We care for your</h5>-->
+<!--            <h1 class="greenishBlue heading  font-weight-bold  pb-20">Medical <span class="darkBlue">Health</span></h1>-->
+<!--            <p class="font20 w-50 pb-30 darkText">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel-->
+<!--                velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec-->
+<!--                sagittis sem nibh id elit.</p>-->
+<!--            <button class="button button&#45;&#45;wayra button&#45;&#45;border-thick button&#45;&#45;text-upper button&#45;&#45;size-s">Let's Start-->
+<!--            </button>-->
+<!--            &lt;!&ndash; </div> &ndash;&gt;-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--</header>-->
+<!--Service card-->
+<section class="slide-wrapper">
+    <div>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" ></li>
+                <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="carousel-item ">
+                    <div class="fill" style="background-image: url('./images/medical/3485318.jpg'); background-size: cover;">
+                                        <div class="caption">
+                                            <h1 class="greenishBlue heading  font-weight-bold  pb-20">Medical <span class="darkBlue">Health</span></h1>
+                                                        <p class="font20 w-50 pb-30 darkText">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
+                                                            velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec
+                                                            sagittis sem nibh id elit.</p>
+                                            <button class="button button--wayra button--border-thick button--text-upper button--size-s mt-10">Let's Start</button>
+
+                                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <div class="fill" style="background-image: url('./images/medical/slide2.jpg'); background-size: cover;">
+                        <div class="caption">
+                            <h1 class="greenishBlue heading  font-weight-bold  pb-20 slide-right">Medical <span class="darkBlue">Health</span></h1>
+                            <p class="font20 w-50 pb-30 darkText slide-right">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
+                                velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec
+                                sagittis sem nibh id elit.</p>
+                            <button class="button button--wayra button--border-thick button--text-upper button--size-s mt-10">Let's Start</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="fill" style="background-image: url('./images/medical/slide3.jpg'); background-size: cover;">
+                        <div class="caption">
+                            <h1 class="greenishBlue heading  font-weight-bold  pb-20">Medical <span class="darkBlue">Health</span></h1>
+                            <p class="font20 w-50 pb-30 text-white">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
+                                velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec
+                                sagittis sem nibh id elit.</p>
+                            <button class="button button--wayra button--border-thick button--text-upper button--size-s mt-10 text-white">Let's Start</button>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
-
-</header>
-<!--Service card-->
+</section>
 <section  data-aos="zoom-in-up"  data-aos-duration="1000" class="hero-cards ">
 
     <div class="container">
         <div class="col-lg-12">
             <div class="row text-center">
                 <div class="col-xl-4 service-box col-lg-4 col-md-4 col-sm-12 ">
-                    <div class="bg-greenishBlue shadow-3 p-4 mt-4 m-15  ">
+                    <div class="bg-greenishBlue shadow-3 p-4 mt-4 m-15 ">
                        <span class="service-icon">
                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                 version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 409.05 409.05"
@@ -156,6 +214,7 @@
                 <span class="line">  <h4 class=" pb-30 ls-1">Medical health at its best</h4></span>
                 <h2 class="font60 darkText">We Value Your <span class="greenishBlue">Family More</span> Than Anyone
                     Else.</h2>
+
             </div>
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 col-12 p20" data-aos="fade-left"  data-aos-duration="400">
                 <p class="p-text darkText pb-50">We combine classic brand strategy and account planning to find a
@@ -982,7 +1041,29 @@
         }
  </script>
 <script>
+    $('#myCarousel').carousel({
+        interval: false
+    });
 
+    //scroll slides on swipe for touch enabled devices
+
+    $("#myCarousel").on("touchstart", function(event){
+
+        var yClick = event.originalEvent.touches[0].pageY;
+        $(this).one("touchmove", function(event){
+
+            var yMove = event.originalEvent.touches[0].pageY;
+            if( Math.floor(yClick - yMove) > 1 ){
+                $(".carousel").carousel('next');
+            }
+            else if( Math.floor(yClick - yMove) < -1 ){
+                $(".carousel").carousel('prev');
+            }
+        });
+        $(".carousel").on("touchend", function(){
+            $(this).off("touchmove");
+        });
+    });
 </script>
 </body>
 </html>
