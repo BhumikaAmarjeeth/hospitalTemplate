@@ -277,6 +277,53 @@ textarea, select, input, button:focus {
         padding: 0px 1rem;
     }
 }
+/* Ipad Pro */
+
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    html, body{
+        overflow-x: hidden;
+    }
+
+    .blog-card .blog-content h3{
+        font-size: 13px ;
+    }
+}
+
+
+/* Ipad */
+
+@media only screen 
+  and (min-width: 768px) 
+  and (max-height: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+      .owl-carousel{
+          cursor: e-resize;
+      }
+
+      #contactForm .font-35{
+          font-size:25px;
+      }
+
+  }
+
+
+  .blog-card .blog-content h3{
+    font-size: 20px ;
+}
+.active1 a{
+
+    color: #0063dd !important;
+    -webkit-transition: .9s all ease-out;
+    -moz-transition: .9s all ease-out;
+    /*transition: .9s all ease-out;*/
+    transition: width 2s ease-out;
+    opacity: 1;
+}
 
 .navbar-nav .nav-item {
     font-weight: 500;
@@ -513,6 +560,10 @@ font-weight: 700;
     line-height: 16px;
     letter-spacing: 0.67px;
 }
+.testimonials .owl-dot{
+    margin:0px -20px 0px !important;
+}
+
 		.testimonial-name {
 		    margin: -17px auto 0;
 		    display: table;
@@ -581,7 +632,7 @@ font-weight: 700;
 
 .name{
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 500;
     margin-bottom: 0px;
 }
 .place{
@@ -745,8 +796,9 @@ opacity: 1;
 
 footer{
     background-color: #2E3242;
-    color: #87878B;
-    padding:30px 0px;
+    color: #c1c1c3;
+    padding: 30px 0px;
+    font-size: 15px;
 }
 
 .social-media-icon{
@@ -1019,7 +1071,7 @@ a:hover{
 .form-input{
     height: 50px !important;
     padding: 15px;
-    color: #bdbdbd;
+    color: #2b2a2a;
 }
 
 .ml--15{
@@ -1032,6 +1084,7 @@ a:hover{
 
 #msgSubmit {
     font-size: 15px;
+    display: inline-grid;
 }
 
 .with-errors ul li
@@ -1050,7 +1103,9 @@ a:hover{
 .pt-5{
     padding-top: 5px;
 }
-
+.owl-carousel{
+    cursor: e-resize;
+}
 .blog-content{
     padding: 3rem 30px !important;
 }
@@ -1566,4 +1621,12 @@ position: absolute;
     display: table;
     color: #3264f5;
     font-size: 35px;
+}
+
+.yellowDark{
+color:#fff;
+}
+
+.link{
+    font-size:13px;
 }
