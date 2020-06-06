@@ -882,6 +882,13 @@ button{
     border-left: 50px solid #3264F5;
 }
 
+.contactAddress{
+    position: absolute;
+    z-index: 99;
+    margin-top: 10%;
+    
+}
+
 .logo{
     width: 190px;
 }
