@@ -21,6 +21,19 @@ body {
     font-weight: 400;
     overflow-x: hidden;
 }
+
+::placeholder {
+    color: #2b2a2a;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #2b2a2a;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+   color: #2b2a2a;
+  }
 body {
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
@@ -431,7 +444,7 @@ textarea, select, input, button:focus {
 
 .centerAlign{
     position: absolute;
-    top: 30%;
+    top: 26%;
 
 }
 
@@ -443,7 +456,7 @@ textarea, select, input, button:focus {
 .font60{
     font-size: 60px;
 }
-@media (min-device-width:768px) and (max-device-width: 11199px)
+@media (min-device-width:768px) and (max-device-width: 1199px)
 
  {
      .font60{
@@ -472,6 +485,9 @@ textarea, select, input, button:focus {
         .p-text{
         font-size:15px;
             line-height: 20px; 
+        }
+        .font48{
+            font-size:30px !important;
         }
     }
 
@@ -688,6 +704,10 @@ opacity: 1;
         margin-left:10%;
         margin-right:10%;
     }
+    .centerAlign .w-50{
+        width: 100% !important;
+    }
+
 }
 
 .font-35{
